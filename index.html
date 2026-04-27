@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rulos de Estatua</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Oswald:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Partículas de slime flotando -->
+  <div class="particles" id="particles"></div>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="nav-logo">👻 Rulos de Estatua</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="bitacora.html">Bitácora</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content">
+      <div class="logo-ghost">👻</div>
+      <h1 class="team-title">Rulos de Estatua</h1>
+      <p class="team-tagline">¿A quién vas a llamar?</p>
+      <p class="team-description">
+        Somos un equipo donde las diferencias son nuestra mayor fortaleza.<br />
+        Cuatro estilos, cuatro miradas, un mismo proyecto.<br />
+        Lo diverso que traemos cada uno es lo que hace única a esta cacería.
+        <br /><br />
+        <span class="slime-text">Por eso, cada página individual es un mundo propio.</span>
+      </p>
+      <a href="#equipo" class="btn-primary">Conocé al equipo</a>
+    </div>
+    <div class="hero-ghost-deco">
+      <span class="ghost-float g1">👻</span>
+      <span class="ghost-float g2">👻</span>
+      <span class="ghost-float g3">👻</span>
+    </div>
+  </header>
+
+  <!-- EQUIPO -->
+  <section class="team-section" id="equipo">
+    <h2 class="section-title">Los Cazadores</h2>
+    <p class="section-subtitle">Hacé clic en un integrante para ver su ficha</p>
+
+    <div class="team-grid">
+
+      <div class="member-card" onclick="window.location.href='agustina.html'">
+        <div class="card-ghost">👻</div>
+        <img src="img/Agu.jpeg" alt="Agustina Brandemann" style="width: 100%; height: auto;" />
+        <h3 class="member-name">Agustina Brandemann</h3>
+        <p class="member-role">Cazafantasmas #1</p>
+        <span class="member-city">📍 Mar del Plata</span>
+        <a href="agustina.html" class="btn-card">Ver ficha →</a>
+      </div>
+
+      <div class="member-card" onclick="window.location.href='valeria.html'">
+        <div class="card-ghost">👻</div>
+          <img src="img/Vale.jpeg" alt="Valeria Natucci" style="width: 100%; height: auto;" />
+        <h3 class="member-name">Valeria Natucci</h3>
+        <p class="member-role">Cazafantasmas #2</p>
+        <span class="member-city">📍 Tucumán</span>
+        <a href="valeria.html" class="btn-card">Ver ficha →</a>
+      </div>
+
+      <div class="member-card" onclick="window.location.href='matias.html'">
+        <div class="card-ghost">👻</div>
+          <img src="img/Mati.jpeg" alt="Matías González" style="width: 100%; height: auto;" />
+        <h3 class="member-name">Matías González</h3>
+        <p class="member-role">Cazafantasmas #3</p>
+        <span class="member-city">📍 Buenos Aires</span>
+        <a href="matias.html" class="btn-card">Ver ficha →</a>
+      </div>
+
+      <div class="member-card" onclick="window.location.href='luis.html'">
+        <div class="card-ghost">👻</div>
+       <!-- <div class="card-avatar">LS</div>-->
+         <img src="img/Luis.jpeg" alt="Luis Specterman" style="width: 100%; height: auto;" />
+        <h3 class="member-name">Luis Specterman</h3>
+        <p class="member-role">Cazafantasmas #4</p>
+        <span class="member-city">📍 Buenos Aires</span>
+        <a href="luis.html" class="btn-card">Ver ficha →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LLAMADA A ACCIÓN -->
+  <section class="cta-section">
+    <h2>¿Querés saber cómo lo hicimos?</h2>
+    <p>Revisá nuestra bitácora de desarrollo</p>
+    <a href="bitacora.html" class="btn-primary">Ver Bitácora</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>👻 Rulos de Estatua &mdash; TP1 Desarrollo Web 2025</p>
+    <p class="footer-small">Hecho con slime, código y mucho café</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
