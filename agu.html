@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agustina — Portafolio Frontend</title>
+  <link rel="stylesheet" href="\css\agu.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER: Logo y navegación principal
+       Mejora futura: agregar efecto de scroll shrink -->
+  <header>
+    <div class="header-inner">
+      <span class="logo">AG<span class="logo-dot">.</span></span>
+      <nav>
+        <ul>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#tarjetas">Proyectos</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PRESENTACIÓN PERSONAL
+         Mejora futura: animar el texto con efecto typewriter en JS -->
+    <section id="sobre-mi">
+      <div class="sobre-mi-inner">
+        <div class="sobre-mi-texto">
+          <p class="label">Frontend Developer</p>
+          <h1>Hola, soy<br /><span class="nombre-highlight">Agustina.</span></h1>
+          <p class="bio">
+            Estudiante de desarrollo web apasionada por construir interfaces que combinen
+            funcionalidad y estética. Me interesa el diseño centrado en el usuario, las
+            animaciones CSS y crear experiencias web que realmente se sientan vivas.
+            Mi misión: escribir código limpio y crear productos digitales que importen.
+          </p>
+          <a href="#contacto" class="btn-primary">Hablemos →</a>
+        </div>
+        <div class="sobre-mi-imagen">
+          <!-- Imagen de avatar generada con IA para preservar privacidad -->
+          <img
+            src="img\AguAvatar.jpeg"
+            alt="Avatar de Agustina, desarrolladora frontend"
+            class="avatar"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- TARJETAS DE PROYECTOS
+         Mejora futura: agregar filtro por tecnología con JavaScript -->
+    <section id="tarjetas">
+      <h2 class="section-title">Proyectos <span class="accent">destacados</span></h2>
+      <div class="tarjetas-grid">
+
+        <article class="tarjeta">
+          <div class="tarjeta-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80"
+              alt="Código en pantalla representando un proyecto de landing page"
+            />
+            <span class="tarjeta-tag">HTML · CSS</span>
+          </div>
+          <div class="tarjeta-body">
+            <h3>Landing Page</h3>
+            <p>Primera práctica formativa: portafolio personal responsivo con dark mode, Flexbox y animaciones CSS.</p>
+          </div>
+        </article>
+
+        <article class="tarjeta">
+          <div class="tarjeta-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&q=80"
+              alt="Interfaz de diseño web en monitor"
+            />
+            <span class="tarjeta-tag">CSS · Grid</span>
+          </div>
+          <div class="tarjeta-body">
+            <h3>UI Components</h3>
+            <p>Biblioteca de componentes reutilizables: cards, botones, formularios y tablas con estilos personalizados.</p>
+          </div>
+        </article>
+
+        <article class="tarjeta">
+          <div class="tarjeta-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?w=600&q=80"
+              alt="Diseño responsivo en distintos dispositivos"
+            />
+            <span class="tarjeta-tag">Responsive</span>
+          </div>
+          <div class="tarjeta-body">
+            <h3>Diseño Responsivo</h3>
+            <p>Exploración de layouts adaptativos para mobile, tablet y desktop usando media queries y unidades relativas.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- HABILIDADES: tecnologías, deseos de aprendizaje y hobbies -->
+    <section id="habilidades">
+      <h2 class="section-title">Mis <span class="accent">habilidades</span></h2>
+      <div class="habilidades-wrap">
+
+        <div class="habilidades-bloque">
+          <h3>Tecnologías que manejo</h3>
+          <table class="habilidades-tabla">
+            <thead>
+              <tr>
+                <th>Tecnología</th>
+                <th>Nivel</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>HTML5</td><td><span class="nivel nivel-alto">Intermedio</span></td></tr>
+              <tr><td>CSS3</td><td><span class="nivel nivel-alto">Intermedio</span></td></tr>
+              <tr><td>Flexbox / Grid</td><td><span class="nivel nivel-medio">En práctica</span></td></tr>
+              <tr><td>Git & GitHub</td><td><span class="nivel nivel-medio">Aprendiendo</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="habilidades-bloque">
+          <h3>Quiero aprender</h3>
+          <ul class="habilidades-lista">
+            <li> JavaScript avanzado</li>
+            <li> React</li>
+            <li> Figma & diseño UX/UI</li>
+            <li> Node.js</li>
+          </ul>
+
+          <h3 style="margin-top: 2rem;">Hobbies</h3>
+          <ul class="habilidades-lista">
+            <li> Cine y series</li>
+            <li> Lectura</li>
+            <li> Música</li>
+            <li> Plantas</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FORMULARIO DE CONTACTO
+         Mejora futura: conectar con FormSpree o EmailJS para envío real -->
+    <section id="contacto">
+      <h2 class="section-title">¿Hablamos? <span class="accent">Escribime.</span></h2>
+      <div class="contacto-wrap">
+        <div class="contacto-info">
+          <p>Si tenés un proyecto, una idea o simplemente querés saludar, estoy disponible. Respondo rápido 🚀</p>
+          <div class="social-links">
+            <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+        <form class="contacto-form" onsubmit="return false;">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-group">
+              <label for="apellido">Apellido</label>
+              <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="+54 11..." />
+            </div>
+          </div>
+          <button type="submit" class="btn-submit">Enviar mensaje →</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- PELÍCULAS FAVORITAS -->
+    <section id="peliculas">
+      <h2 class="section-title">Mis <span class="accent">películas</span> favoritas</h2>
+      <div class="peliculas-grid">
+
+        <article class="pelicula-card">
+          <div class="pelicula-img-wrap">
+            <img
+              src="img\ShawshankRedemption.jpg"
+              alt="Celda de prisión iluminada evocando The Shawshank Redemption"
+            />
+            <span class="pelicula-anio">1994</span>
+          </div>
+          <div class="pelicula-info">
+            <h3>The Shawshank Redemption</h3>
+            <p>Una historia sobre esperanza, amistad y libertad que te recuerda que el espíritu humano es indomable. La mejor película de todos los tiempos para mí.</p>
+          </div>
+        </article>
+
+        <article class="pelicula-card">
+          <div class="pelicula-img-wrap">
+            <img
+              src="img\dirtyDancing.webp"
+              alt="Pista de baile con luces cálidas evocando Dirty Dancing"
+            />
+            <span class="pelicula-anio">1987</span>
+          </div>
+          <div class="pelicula-info">
+            <h3>Dirty Dancing</h3>
+            <p>Música, baile, amor y la valentía de ser auténtica. Un clásico que nunca pasa de moda y que me levanta el ánimo siempre.</p>
+          </div>
+        </article>
+
+        <article class="pelicula-card">
+          <div class="pelicula-img-wrap">
+            <img
+              src="img\elOrigen.webp"
+              alt="Reloj de arena evocando los sueños dentro de sueños de El Origen"
+            />
+            <span class="pelicula-anio">2010</span>
+          </div>
+          <div class="pelicula-info">
+            <h3>El Origen <span style="font-weight:300;font-size:0.85em">(Inception)</span></h3>
+            <p>Nolan en su máxima expresión. Una película que te hace cuestionar la realidad y te deja pensando días después de verla.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER: redes sociales y créditos
+       Mejora futura: agregar botón "volver arriba" con JavaScript -->
+  <footer>
+    <div class="footer-inner">
+      <span class="logo">AG<span class="logo-dot">.</span></span>
+      <p class="footer-copy">Diseñado y desarrollado por <strong>Agustina</strong> · PFO1 IFTS N°29 · 2025</p>
+      <div class="footer-links">
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:agustina@email.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
