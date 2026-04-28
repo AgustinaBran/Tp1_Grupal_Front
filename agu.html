@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Agustina — Portafolio Frontend</title>
   <link rel="stylesheet" href="\css\agu.css" />
+  <link rel="stylesheet" href="\css\js-aguStyles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
@@ -15,7 +16,7 @@
        Mejora futura: agregar efecto de scroll shrink -->
   <header>
     <div class="header-inner">
-      <span class="logo">AG<span class="logo-dot">.</span></span>
+      <span class="logo">A<span class="logo-dot">.</span></span>
       <nav>
         <ul>
           <li><a href="#sobre-mi">Sobre mí</a></li>
@@ -24,6 +25,11 @@
           <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
+      <button class="hamburger" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+      </button>
     </div>
   </header>
 
@@ -150,43 +156,7 @@
       </div>
     </section>
 
-    <!-- FORMULARIO DE CONTACTO
-         Mejora futura: conectar con FormSpree o EmailJS para envío real -->
-    <section id="contacto">
-      <h2 class="section-title">¿Hablamos? <span class="accent">Escribime.</span></h2>
-      <div class="contacto-wrap">
-        <div class="contacto-info">
-          <p>Si tenés un proyecto, una idea o simplemente querés saludar, estoy disponible. Respondo rápido 🚀</p>
-          <div class="social-links">
-            <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
-          </div>
-        </div>
-        <form class="contacto-form" onsubmit="return false;">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="nombre">Nombre</label>
-              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
-            </div>
-            <div class="form-group">
-              <label for="apellido">Apellido</label>
-              <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required />
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="tu@email.com" required />
-            </div>
-            <div class="form-group">
-              <label for="telefono">Teléfono</label>
-              <input type="tel" id="telefono" name="telefono" placeholder="+54 11..." />
-            </div>
-          </div>
-          <button type="submit" class="btn-submit">Enviar mensaje →</button>
-        </form>
-      </div>
-    </section>
+   
 
     <!-- PELÍCULAS FAVORITAS -->
     <section id="peliculas">
@@ -238,6 +208,94 @@
       </div>
     </section>
 
+    <!-- MÚSICA FAVORITA -->
+    <section id="musica">
+      <h2 class="section-title">Mi <span class="accent">música</span> favorita</h2>
+      <div class="peliculas-grid">
+
+        <article class="pelicula-card">
+          <div class="pelicula-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&q=80"
+              alt="Guitarra y micrófono evocando a Joaquín Sabina"
+            />
+            <span class="pelicula-anio">Sabina</span>
+          </div>
+          <div class="pelicula-info">
+            <h3>Joaquín Sabina</h3>
+            <p>Poeta del rock en español. Sus letras cuentan historias de amor, desamor y la vida en las calles que te llegan directo al alma.</p>
+          </div>
+        </article>
+
+        <article class="pelicula-card">
+          <div class="pelicula-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=600&q=80"
+              alt="Luces de discoteca evocando el sonido synth-pop de Erasure"
+            />
+            <span class="pelicula-anio">Erasure</span>
+          </div>
+          <div class="pelicula-info">
+            <h3>Erasure</h3>
+            <p>Synth-pop puro de los 80s. Always y A Little Respect son himnos que nunca pasan de moda y te hacen querer bailar sin parar.</p>
+          </div>
+        </article>
+
+        <article class="pelicula-card">
+          <div class="pelicula-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?w=600&q=80"
+              alt="Escenario de rock evocando el sonido de INXS"
+            />
+            <span class="pelicula-anio">INXS</span>
+          </div>
+          <div class="pelicula-info">
+            <h3>INXS</h3>
+            <p>Rock australiano con una energía única. Michael Hutchence tenía un carisma irrepetible y Never Tear Us Apart es perfecta.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+     <!-- FORMULARIO DE CONTACTO
+         Mejora futura: conectar con FormSpree o EmailJS para envío real -->
+    <section id="contacto">
+      <h2 class="section-title">¿Hablamos? <span class="accent">Escribime.</span></h2>
+      <div class="contacto-wrap">
+        <div class="contacto-info">
+          <p>Si tenés un proyecto, una idea o simplemente querés saludar, estoy disponible. Respondo rápido 🚀</p>
+          <div class="social-links">
+            <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+        <form class="contacto-form" onsubmit="return false;">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-group">
+              <label for="apellido">Apellido</label>
+              <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="+54 11..." />
+            </div>
+          </div>
+          <button type="submit" class="btn-submit">Enviar mensaje →</button>
+        </form>
+      </div>
+    </section>
+
   </main>
 
   <!-- FOOTER: redes sociales y créditos
@@ -254,5 +312,7 @@
     </div>
   </footer>
 
+    <button id="back-to-top" aria-label="Volver arriba">↑</button>
+  <script src="js\agu.js"></script>
 </body>
 </html>

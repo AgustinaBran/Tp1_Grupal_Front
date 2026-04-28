@@ -120,7 +120,7 @@ Cada integrante implementa su propia función JS en su archivo `js/nombre.js`. V
 
 ## 🚀 Enlace al Proyecto Desplegado
 
-🔗 **Vercel:** [https://rulos-de-estatua.vercel.app](#) ← *completar con URL real*
+🔗 **Vercel:** [https://tp1-grupal-front-pqer9rce8-agustinabrans-projects.vercel.app/]
 
 ---
 
