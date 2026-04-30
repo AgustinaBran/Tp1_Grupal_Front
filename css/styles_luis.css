@@ -1,0 +1,909 @@
+:root {
+  --color-bg: #111827;
+  --color-surface: #1f2937;
+  --color-surface-2: #273549;
+  --color-accent: #7c3aed;
+  --color-accent-light: #a78bfa;
+  --color-text: #e8e8f0;
+  --color-text-muted: #a1a1aa;
+  --color-border: rgba(255, 255, 255, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+}
+
+/* ── Secciones ── */
+.section {
+  padding: 2.5rem 1.25rem;
+  max-width: 62.5rem; /* 1000px */
+  margin: auto;
+}
+
+.section__title {
+  font-size: 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+/* ── Header ── */
+.header {
+  background: var(--color-surface);
+  border-bottom: 0.0625rem solid var(--color-border);
+}
+
+.header__contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9375rem;
+}
+
+.nav__list {
+  display: flex;
+  gap: 1.875rem;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.nav__link {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  color: var(--color-text);
+  background-color: transparent;
+  border: 0.0625rem solid var(--color-border);
+  padding: 0.5rem 0.9375rem;
+  border-radius: 0.3125rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav__link:hover {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+/* ── Botones ── */
+.btn {
+  display: inline-block;
+  padding: 0.625rem 1.25rem;
+  background: var(--color-accent);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background: var(--color-accent-light);
+}
+
+/* ── Sobre mí ── */
+.sobre-mi__content {
+  display: flex;
+  gap: 1.875rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sobre-mi__text {
+  flex: 1;
+}
+
+.sobre-mi__title {
+  font-size: 2rem;
+  margin-bottom: 0.625rem;
+}
+
+.sobre-mi__desc {
+  color: var(--color-text-muted);
+  margin-bottom: 0.9375rem;
+}
+
+.sobre-mi__img {
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 50%;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* ── Tarjetas ── */
+.tarjetas {
+  background: var(--color-surface);
+  padding: 2.5rem 1.25rem;
+}
+
+.tarjetas__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+  gap: 1.25rem;
+}
+
+.card {
+  background: var(--color-surface-2);
+  border: 0.0625rem solid var(--color-border);
+  border-radius: 0.625rem;
+  overflow: hidden;
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.3);
+}
+
+.card__img {
+  width: 100%;
+  height: 11.25rem;
+  object-fit: cover;
+}
+
+.card__body {
+  padding: 0.9375rem;
+}
+
+.card__title {
+  margin-bottom: 0.3125rem;
+}
+
+.card__desc {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+.card:hover {
+  background: var(--color-surface);
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0.5rem 1rem rgba(124, 58, 237, 0.3);
+}
+
+/* ── Habilidades ── */
+.habilidades__tables {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+  gap: 1.25rem;
+}
+
+.habilidades__group {
+  background: var(--color-surface);
+  border: 0.0625rem solid var(--color-border);
+  padding: 0.9375rem;
+}
+
+/* ── Tabla ── */
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabla th,
+.tabla td {
+  padding: 0.5rem;
+  border-bottom: 0.0625rem solid var(--color-border);
+  text-align: left;
+}
+
+/* ── Lista ── */
+.lista-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.lista-skills li {
+  background: var(--color-surface-2);
+  padding: 0.5rem;
+}
+
+/* ── Formulario ── */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.form__row {
+  display: flex;
+  gap: 0.625rem;
+  flex-wrap: wrap;
+}
+
+.form__group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input {
+  padding: 0.625rem;
+  background: var(--color-surface-2);
+  border: 0.0625rem solid var(--color-border);
+  color: white;
+}
+
+/* ── Películas ── */
+.peliculas__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+  gap: 1.25rem;
+}
+
+.pelicula-card {
+  background: var(--color-surface);
+  border: 0.0625rem solid var(--color-border);
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+
+.pelicula-card__img {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+}
+
+.pelicula-card__body {
+  padding: 0.9375rem;
+}
+
+.pelicula-card__title {
+  margin-bottom: 0.3125rem;
+}
+
+.pelicula-card__desc {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+/* ── Footer ── */
+.footer {
+  background: var(--color-surface);
+  border-top: 0.0625rem solid var(--color-border);
+  padding: 1.25rem;
+}
+
+.footer__contenido {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+}
+
+.footer__copyright {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.footer__links {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.footer__link:hover {
+  color: var(--color-accent);
+}
+
+.footer__link img {
+  width: 1.875rem;
+  height: 1.875rem;
+  transition: 0.3s;
+}
+
+.footer__link img:hover {
+  transform: scale(1.2);
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-0.5rem); }
+  100% { transform: translateY(0); }
+}
+
+.lista-skills li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.icono svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+  stroke: currentColor;
+}
+
+/* ================================================================
+   ESTILOS AGREGADOS POR JavaScript
+   ================================================================ */
+
+/* ── 1. Animación de entrada "Sobre mí" ── */
+.sobre-mi__content {
+  opacity: 0;
+  transform: translateY(1.5rem);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.sobre-mi__content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── 2. Flip de Cards de Proyectos ── */
+.card--flippable {
+  perspective: 1000px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+.card--flippable:hover {
+  background: transparent;
+  transform: none;
+  box-shadow: none;
+}
+.card__flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 22rem;
+  transform-style: preserve-3d;
+  transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card--flippable.flipped .card__flip-inner {
+  transform: rotateY(180deg);
+}
+.card__frente,
+.card__reverso {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+.card__frente {
+  background: var(--color-surface-2);
+  border: 0.0625rem solid var(--color-border);
+  box-shadow: 0 0.25rem 0.625rem rgba(0,0,0,0.3);
+}
+.card__reverso {
+  background: var(--color-accent);
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1.5rem;
+  gap: 0.75rem;
+}
+.card__reverso-titulo {
+  font-size: 1.25rem;
+  color: white;
+}
+.card__reverso-detalle {
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.5;
+}
+.card__reverso-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.card__reverso-tag {
+  background: rgba(255,255,255,0.2);
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+.card__reverso-btn {
+  background: white;
+  color: var(--color-accent);
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 0.3125rem;
+  margin-top: auto;
+}
+.card__reverso-btn:hover {
+  background: rgba(255,255,255,0.85);
+}
+/* Indicador "click para girar" */
+.card--flippable .card__frente::after {
+  content: "Click para ver más ↩";
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.75rem;
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+  opacity: 0.7;
+}
+
+/* ── 3. Botón Me gusta ── */
+.btn-like {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+  padding: 0.4rem 0.9rem;
+  background: transparent;
+  border: 0.0625rem solid var(--color-border);
+  border-radius: 999px;
+  color: var(--color-text-muted);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.btn-like:hover {
+  border-color: #e11d48;
+  color: #e11d48;
+}
+.btn-like--activo {
+  background: rgba(225, 29, 72, 0.12);
+  border-color: #e11d48;
+  color: #e11d48;
+  font-weight: 600;
+}
+.btn-like__icono {
+  font-size: 1rem;
+  line-height: 1;
+}
+@keyframes latido {
+  0%   { transform: scale(1); }
+  30%  { transform: scale(1.4); }
+  60%  { transform: scale(0.9); }
+  100% { transform: scale(1); }
+}
+.btn-like--animar .btn-like__icono {
+  animation: latido 0.4s ease;
+}
+
+/* ── 4. Formulario — errores y éxito ── */
+.form__input--error {
+  border-color: #e11d48 !important;
+  outline: none;
+}
+.form__error {
+  color: #e11d48;
+  font-size: 0.78rem;
+  margin-top: 0.25rem;
+}
+.form__exito {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 2.5rem 1.5rem;
+  background: var(--color-surface);
+  border: 0.0625rem solid var(--color-border);
+  border-radius: 0.625rem;
+  text-align: center;
+  animation: fadeIn 0.5s ease;
+}
+.form__exito-icono {
+  font-size: 2.5rem;
+}
+.form__exito-titulo {
+  font-size: 1.4rem;
+  color: var(--color-text);
+}
+.form__exito-texto {
+  color: var(--color-text-muted);
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(1rem); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── 5. Menú Hamburguesa ── */
+.btn-hamburguesa {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 2.2rem;
+  height: 2.2rem;
+  background: transparent;
+  border: 0.0625rem solid var(--color-border);
+  border-radius: 0.3rem;
+  cursor: pointer;
+  padding: 0.35rem;
+}
+.btn-hamburguesa span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--color-text);
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+/* Animación X al abrirse */
+.btn-hamburguesa--activo span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.btn-hamburguesa--activo span:nth-child(2) {
+  opacity: 0;
+}
+.btn-hamburguesa--activo span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── 6. Scroll spy — link activo en nav ── */
+.nav__link--activo {
+  background-color: var(--color-accent);
+  color: white !important;
+}
+
+/* ── Responsive: mobile ── */
+@media (max-width: 640px) {
+  .btn-hamburguesa {
+    display: flex;
+  }
+  .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--color-surface);
+    border-bottom: 0.0625rem solid var(--color-border);
+    padding: 1rem;
+    z-index: 100;
+  }
+  .nav--abierto {
+    display: block;
+  }
+  .nav__list {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .nav__link {
+    display: block;
+    text-align: center;
+  }
+  .header {
+    position: relative;
+  }
+}
+
+
+/* ================================================================
+   MODAL DE YOUTUBE — Preview con miniatura (abre en nueva pestaña)
+   ================================================================ */
+
+.yt-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.yt-modal--visible {
+  display: flex;
+  animation: fadeIn 0.25s ease;
+}
+
+.yt-modal__caja {
+  background: var(--color-surface);
+  border: 0.0625rem solid var(--color-border);
+  border-radius: 0.75rem;
+  width: 100%;
+  max-width: 36rem;
+  padding: 1.25rem;
+  position: relative;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(2rem); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+.yt-modal__cerrar {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: var(--color-surface-2);
+  border: 0.0625rem solid var(--color-border);
+  color: var(--color-text);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+.yt-modal__cerrar:hover { background: var(--color-accent); color: white; }
+
+.yt-modal__titulo {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 0.85rem;
+  padding-right: 2rem;
+  color: var(--color-text);
+}
+
+/* Contenedor de la miniatura — clickeable, va a YouTube */
+.yt-modal__preview {
+  display: block;
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
+}
+.yt-modal__thumb {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  transition: filter 0.25s;
+}
+.yt-modal__preview:hover .yt-modal__thumb {
+  filter: brightness(0.55);
+}
+
+/* Overlay con botón play centrado */
+.yt-modal__play-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: rgba(0,0,0,0.35);
+  transition: background 0.25s;
+}
+.yt-modal__preview:hover .yt-modal__play-overlay {
+  background: rgba(0,0,0,0.55);
+}
+.yt-modal__play-btn {
+  width: 4rem;
+  height: 4rem;
+  background: #ff0000;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  padding-left: 4px; /* centra el triángulo visualmente */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  transition: transform 0.2s;
+}
+.yt-modal__preview:hover .yt-modal__play-btn {
+  transform: scale(1.12);
+}
+.yt-modal__play-texto {
+  color: white;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.yt-modal__aviso {
+  margin-top: 0.6rem;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+/* Botón "▶ Ver trailer" / "▶ Escuchar tema" en cada card */
+.btn-video {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+  padding: 0.45rem 1rem;
+  background: var(--color-accent);
+  color: white;
+  border: none;
+  border-radius: 999px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.25s, transform 0.15s;
+}
+.btn-video:hover {
+  background: var(--color-accent-light);
+  transform: scale(1.04);
+}
+.btn-video__icono { font-size: 0.75rem; }
+
+
+/* ================================================================
+   NAVEGACIÓN SPA — SLIDE ENTRE SECCIONES
+   ================================================================ */
+
+/* El main necesita position relative para contener las secciones */
+.main {
+  position: relative;
+  overflow: hidden;     /* impide que las secciones que se van sean visibles */
+  min-height: calc(100vh - var(--header-height, 5rem));
+}
+
+/* Estado base de todas las secciones: ocultas fuera del viewport */
+.seccion {
+  display: none;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  min-height: 100%;
+  /* Mantenemos el padding/spacing original de .section */
+}
+
+/* La sección activa ocupa el espacio y es visible */
+.seccion--activa {
+  display: block;
+  position: relative;   /* vuelve al flujo normal para que el footer quede abajo */
+  animation: none;
+}
+
+/* ── Animaciones de entrada ── */
+
+/* La sección nueva arranca desplazada y va a su lugar */
+@keyframes slideDesdeIzquierda {
+  from { transform: translateX(-100%); opacity: 0.4; }
+  to   { transform: translateX(0);     opacity: 1;   }
+}
+@keyframes slideDesdeDerecha {
+  from { transform: translateX(100%);  opacity: 0.4; }
+  to   { transform: translateX(0);     opacity: 1;   }
+}
+
+/* ── Animaciones de salida ── */
+
+/* La sección actual sale hacia la izquierda o derecha */
+@keyframes slideHaciaIzquierda {
+  from { transform: translateX(0);     opacity: 1;   }
+  to   { transform: translateX(-100%); opacity: 0.4; }
+}
+@keyframes slideHaciaDerecha {
+  from { transform: translateX(0);     opacity: 1;   }
+  to   { transform: translateX(100%);  opacity: 0.4; }
+}
+
+/* Estado "preparado para entrar" — posición inicial antes de animar */
+.seccion--desde-derecha  { transform: translateX(100%);  opacity: 0.4; }
+.seccion--desde-izquierda { transform: translateX(-100%); opacity: 0.4; }
+
+/* Clases de salida que aplica el JS */
+.seccion--saliendo-izquierda {
+  position: absolute;
+  inset: 0;
+  animation: slideHaciaIzquierda 0.45s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  pointer-events: none;
+}
+.seccion--saliendo-derecha {
+  position: absolute;
+  inset: 0;
+  animation: slideHaciaDerecha 0.45s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  pointer-events: none;
+}
+
+/* Cuando la sección activa ya no tiene clases de entrada, anima la llegada */
+.seccion--activa:not(.seccion--desde-derecha):not(.seccion--desde-izquierda):not(.seccion--entrando) {
+  animation: slideDesdeDerecha 0.45s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+/* ── Botón "← Volver al inicio" ── */
+.btn-volver {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+  padding: 0.4rem 1rem;
+  background: transparent;
+  border: 0.0625rem solid var(--color-border);
+  border-radius: 999px;
+  color: var(--color-text-muted);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.btn-volver:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  transform: translateX(-3px);
+}
+
+
+/* ── Botón "← Volver al grupo" en el header ── */
+.btn-grupo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.9rem;
+  background: transparent;
+  border: 0.0625rem solid var(--color-border);
+  border-radius: 999px;
+  color: var(--color-text-muted);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.btn-grupo:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  transform: translateX(-3px);
+}
+
+
+/* ================================================================
+   SVG — ESTRELLAS DE NIVEL Y HOBBIES
+   ================================================================ */
+
+/* ── Estrellas ── */
+.estrellas {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+.estrella {
+  width: 1.1rem;
+  height: 1.1rem;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+.estrella--llena {
+  fill: #f59e0b;        /* ámbar cálido */
+  stroke: #d97706;
+  stroke-width: 1;
+}
+.estrella--vacia {
+  fill: transparent;
+  stroke: var(--color-border);
+  stroke-width: 1.5;
+}
+/* Pequeña animación al pasar el mouse por la fila */
+tr:hover .estrella--llena {
+  transform: scale(1.15);
+  fill: #fbbf24;
+}
+
+/* ── Hobbies ── */
+.lista-skills--hobbies li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.hobby-icono {
+  width: 1.2rem;
+  height: 1.2rem;
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+.lista-skills--hobbies li:hover .hobby-icono {
+  transform: scale(1.25) rotate(-5deg);
+}
