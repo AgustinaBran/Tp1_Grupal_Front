@@ -72,7 +72,7 @@ header {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1.2rem 2rem;
-  
+
 }
 
 .logo {
@@ -613,4 +613,29 @@ h1 {
         transform: scale(1);
         text-shadow: 0 0 10px rgba(255, 100, 150, 0.5);
     }
+}
+.btn-volver {
+  position: fixed;
+  bottom: 2rem;
+  left: 1rem;
+  background: var(--bg-card);
+  color: var(--accent);
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.7rem 1.4rem;
+  border-radius: 100px;
+  border: 1px solid rgba(255, 77, 181, 0.3);
+  z-index: 999;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.btn-volver:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(255, 77, 181, 0.2);
+  opacity: 1;
+}
+
+footer {
+  padding-bottom: 6rem;
 }
