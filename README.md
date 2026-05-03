@@ -18,7 +18,7 @@ La diversidad de estilos individuales es intencional: refleja que las diferencia
 |--------|--------|
 | Agustina Brandemann @AgustinaBran (https://github.com/AgustinaBran/PortfolioFE)
 | Valeria Natucci  @TheGipsyGirl (https://github.com/TheGipsyGirl/vale_natucci_perfil.git) |
-| Matías González @Matises13 (https://github.com/Matises13/mi-portfolio.git) |
+| Matías González @Matises13 (https://github.com/Matises13/PortafolioPersonal) |
 | Luis Specterman @SpectermanLuis (https://github.com/SpectermanLuis/tecnicatura_front_pi01.git) |
 
 ---
