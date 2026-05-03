@@ -12,26 +12,29 @@
 
 <body>
 
-<header class="header">
-    <nav class="nav container">
-        <a href="index.html" class="brand">
-            <img src="img/logo.png" alt="Logo de Valeria Natucci">
-            <div>
-                <h2>TheGipsyGirl</h2>
-                <span>Valeria Natucci</span>
-            </div>
-        </a>
+<nav class="nav container">
+    <a href="index.html" class="brand">
+        <img src="img/logo.png" alt="Avatar de Valeria Natucci">
+        <div>
+            <h2>TheGypsyGirl</h2>
+            <span>Valeria Natucci</span>
+        </div>
+    </a>
 
-        <ul class="menu">
-            <li><a href="valeria.html">Inicio</a></li>
-            <li><a href="#sobre">Sobre mí</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#gustos">Gustos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-            <li><a href="bitacora.html">Bitácora</a></li>
-        </ul>
-    </nav>
-</header>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        ☰
+    </button>
+
+    <ul class="menu" id="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre">Sobre mí</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#gustos">Gustos</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="bitacora.html">Bitácora</a></li>
+    </ul>
+</nav>
 
 <main>
 
@@ -118,6 +121,53 @@
 
 </section>
 
+<section class="proyectos container reveal" id="proyectos">
+    <h2>Proyectos</h2>
+
+    <div class="grid-proyectos">
+
+        <article class="carpeta-proyecto">
+            <div class="carpeta-tapa">
+                <span class="pestania">Kotlin · SQLite</span>
+                <h3>Synergy Sport Club</h3>
+            </div>
+
+            <div class="carpeta-contenido">
+                <img src="img/valeria/synergy.png" alt="Logo Synergy Sport Club">
+                <p>App móvil para gestión de socios y actividades deportivas.</p>
+                <a href="PEGAR_LINK_GITHUB_SYNERGY" target="_blank">Ver GitHub</a>
+            </div>
+        </article>
+
+        <article class="carpeta-proyecto">
+            <div class="carpeta-tapa">
+                <span class="pestania">HTML · CSS · JS</span>
+                <h3>Portafolio Personal</h3>
+            </div>
+
+            <div class="carpeta-contenido">
+                <img src="img/valeria/portfolio.png" alt="Logo Portafolio Personal">
+                <p>Portfolio web con diseño moderno, cálido y responsive.</p>
+                <a href="PEGAR_LINK_GITHUB_PORTFOLIO" target="_blank">Ver GitHub</a>
+            </div>
+        </article>
+
+        <article class="carpeta-proyecto">
+            <div class="carpeta-tapa">
+                <span class="pestania">C# · MySQL</span>
+                <h3>Sistema Club Deportivo</h3>
+            </div>
+
+            <div class="carpeta-contenido">
+                <img src="img/valeria/club.png" alt="Logo Sistema Club Deportivo">
+                <p>Sistema de escritorio para socios, pagos y actividades.</p>
+                <a href="PEGAR_LINK_GITHUB_CLUB" target="_blank">Ver GitHub</a>
+            </div>
+        </article>
+
+    </div>
+</section>
+
     <section class="gustos container reveal" id="gustos">
     <h2>Gustos personales</h2>
 
@@ -126,19 +176,19 @@
 
         <div class="grid-gustos">
             <article class="item-gusto">
-                <img src="img/peliculas/unamentebrillante.jpg" alt="Póster de Interstellar">
+                <img src="img/peliculas/unamentebrillante.jfif" alt="Póster de Interstellar">
                 <h4>Una mente brillante</h4>
                 <p>Me gusta porque mezcla ciencia y emoción.</p>
             </article>
 
             <article class="item-gusto">
-                <img src="img/peliculas/coco.jpg" alt="Póster de Coco">
+                <img src="img/peliculas/coco.jfif" alt="Póster de Coco">
                 <h4>Coco</h4>
                 <p>Valora la vida, la memoria y la familia.</p>
             </article>
 
             <article class="item-gusto">
-                <img src="img/peliculas/shrek2.jpg" alt="Póster de Shrek">
+                <img src="img/peliculas/shrek2.jfif" alt="Póster de Shrek">
                 <h4>Shrek</h4>
                 <p>Un clásico gracioso y base de muchos memes.</p>
             </article>
@@ -153,7 +203,7 @@
         <article class="vinilo-item">
             <div class="vinilo">
                 <span></span>
-                <img src="img/discos/futurenostalgia.jpeg" alt="Future Nostalgia">
+                <img src="img/discos/futurenostalgia.jfif" alt="Future Nostalgia">
             </div>
             <h4>Future Nostalgia</h4>
             <p>Dua Lipa</p>
@@ -162,7 +212,7 @@
         <article class="vinilo-item">
             <div class="vinilo">
                 <span></span>
-                <img src="img/discos/riot.jpeg" alt="RIOT!">
+                <img src="img/discos/riot.jfif" alt="RIOT!">
             </div>
             <h4>RIOT!</h4>
             <p>Paramore</p>
@@ -171,7 +221,7 @@
         <article class="vinilo-item">
             <div class="vinilo">
                 <span></span>
-                <img src="img/discos/unveranosinti.jpg" alt="Un Verano Sin Ti">
+                <img src="img/discos/unveranosinti.jfif" alt="Un Verano Sin Ti">
             </div>
             <h4>Un Verano Sin Ti</h4>
             <p>Bad Bunny</p>

@@ -95,7 +95,7 @@ body::after {
 
 .menu a {
     text-decoration: none;
-    color: #ffffff;
+    color: #151515;
     font-weight: 700;
     font-size: 0.9rem;
     transition: color 0.3s ease;
@@ -121,6 +121,17 @@ body::after {
     width: 100%;
 }
 
+.menu-toggle {
+    display: none;
+    background: #ff4d7d;
+    color: #ffffff;
+    font-size: 1.8rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    padding: 0;
+    line-height: 1;
+}
 /* HERO */
 
 .hero {
@@ -345,6 +356,117 @@ section h2 {
 
 .skill:hover {
     transform: translateY(-8px) scale(1.08);
+}
+
+.grid-proyectos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.carpeta-proyecto {
+    position: relative;
+    min-height: 260px;
+    perspective: 1000px;
+}
+
+.carpeta-tapa {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #ff4d7d, #ff9f1c);
+    border-radius: 1.2rem;
+    padding: 1.5rem;
+    z-index: 3;
+    transform-origin: top;
+    transition: transform 0.55s ease, box-shadow 0.55s ease;
+    box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.18);
+}
+
+.carpeta-tapa::before {
+    content: "";
+    position: absolute;
+    top: -1rem;
+    left: 1.2rem;
+    width: 7rem;
+    height: 2rem;
+    background: #ff9f1c;
+    border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.carpeta-tapa h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.pestania {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.22);
+    color: #ffffff;
+    padding: 0.4rem 0.8rem;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.carpeta-contenido {
+    position: absolute;
+    inset: 1.2rem;
+    background: #ffffff;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    text-align: center;
+    z-index: 2;
+    transform: translateY(18px);
+    transition: transform 0.55s ease;
+    box-shadow: inset 0 0 0 2px rgba(255, 77, 125, 0.08);
+}
+
+.carpeta-contenido img {
+    width: 5.5rem;
+    height: 5.5rem;
+    object-fit: contain;
+    margin-bottom: 0.8rem;
+}
+
+.carpeta-contenido p {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.carpeta-contenido a {
+    display: inline-block;
+    background: #151515;
+    color: #ffffff;
+    padding: 0.7rem 1rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.carpeta-contenido a:hover {
+    background: #ff4d7d;
+}
+
+.carpeta-proyecto:hover .carpeta-tapa {
+    transform: rotateX(-72deg);
+    box-shadow: 0 1.2rem 2rem rgba(255, 77, 125, 0.25);
+}
+
+.carpeta-proyecto:hover .carpeta-contenido {
+    transform: translateY(0);
+}
+
+/* responsive */
+@media (max-width: 900px) {
+    .grid-proyectos {
+        grid-template-columns: 1fr;
+    }
+
+    .carpeta-proyecto {
+        min-height: 280px;
+    }
 }
 
 /* GUSTOS */
@@ -700,15 +822,46 @@ section h2 {
 
 @media (max-width: 900px) {
     .nav {
-        flex-direction: column;
+        min-height: 4.5rem;
+        flex-direction: row;
         gap: 1rem;
-        padding: 1rem 0;
+        padding: 0.6rem 0;
+    }
+
+    .brand img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .brand h2 {
+        font-size: 1.5rem;
+    }
+
+    .brand span {
+        font-size: 0.65rem;
+    }
+
+    .menu-toggle {
+        display: grid;
+        place-items: center;
     }
 
     .menu {
-        flex-wrap: wrap;
-        justify-content: center;
+        position: absolute;
+        top: 4.5rem;
+        left: 0;
+        width: 100%;
+        background: #151515;
+        flex-direction: column;
+        align-items: center;
         gap: 1rem;
+        padding: 1.2rem 0;
+        display: none;
+        border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .menu.abierto {
+        display: flex;
     }
 
     .hero {
@@ -748,11 +901,7 @@ section h2 {
         text-align: center;
     }
 
-    .menu {
-        flex-direction: column;
-        align-items: center;
-    }
-
+    
     .hero-texto h1 {
         font-size: 3.5rem;
     }

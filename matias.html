@@ -1,103 +1,140 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Matías González — Rulos de Estatua</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Oswald:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/matias.css" />
-</head>
-<body class="individual-page">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio Personal</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/matias.css">
 
-  <nav class="navbar">
-    <div class="nav-logo">👻 Rulos de Estatua</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="bitacora.html">Bitácora</a></li>
+</head>
+<body>
+  <!-- HEADER: Encabezado principal -->
+  <header>
+    <img src="img/img.matias/logo.jpg" alt="Logo" id="logo">
+    <h1>Portfolio Personal Marcelo Matias Gonzalez</h1>
+  </header>
+
+  <!-- NAV: Barra de navegación -->
+  <nav>
+    <ul>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="https://tp1-grupal-front.vercel.app/index.html">Volver al Grupo</a></li>
+      <li><a href="https://tp1-grupal-front.vercel.app/bitacora.html">Bitácora</a></li>
     </ul>
   </nav>
 
-  <main style="max-width: 960px; margin: 0 auto; padding: 6rem 1.5rem 2rem;">
+  <!-- MAIN: Contenido principal -->
+  <main>
+    <!-- SOBRE MI -->
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>Buenos Aires - CABA- Tengo 43 Años.</p>
+      <p>Soy estudiante de Desarrollo Front End, apasionado por el diseño web y la creación de interfaces modernas. Mi misión es construir experiencias digitales claras, accesibles y atractivas.</p>
+      <img src="img/img.matias/avatar.png" alt="Foto de perfil o avatar" width="200" height="200">
+    </section>
 
-    <a href="index.html" class="back-btn">← Volver al equipo</a>
-
-    <!-- HEADER DE PERFIL -->
-    <div class="profile-header">
-      <div class="profile-avatar-placeholder" id="avatar">MG</div>
-      <div class="profile-info">
-        <h1>Matías González</h1>
-        <div class="profile-meta">
-          <span>🎃 Cazafantasmas #3</span>
-          <span>📍 Buenos Aires</span>
-          <span>🎂 43 años</span>
+    <!-- TARJETAS -->
+    <section id="proyectos">
+      <h2>Mis Proyectos</h2>
+      <div class="tarjetas-container">
+        <div class="tarjeta">
+          <img src="img/img.matias/proyecto1.png" alt="Proyecto 1" width="360" height="220">
+          <p>Proyecto de landing page con HTML y CSS.</p>
         </div>
-        <!-- Botón interactivo JS -->
-        <button class="btn-primary" id="modeToggle" style="margin-top: 1rem; font-size: 0.85rem; padding: 0.6rem 1.5rem;">
-          👻 Activar modo fantasma
-        </button>
+        <div class="tarjeta">
+          <img src="img/img.matias/proyecto2.jpg" alt="Proyecto 2" width="360" height="220">
+          <p>Aplicación con React para gestión de tareas.</p>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <!-- GRID DE INFO -->
-    <div class="profile-grid">
+    <!-- HABILIDADES -->
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>React y Node.js</li>
+        <li>Aprendiendo TypeScript</li>
+        <li>Hobbies: cine, música y videojuegos</li>
+      </ul>
+    </section>
 
-      <!-- Habilidades -->
-      <div class="info-card">
-        <h2>⚡ Habilidades</h2>
-        <ul class="skills-list" id="skillsList">
-          <li>HTML & CSS</li>
-          <li>JavaScript</li>
-          <li>Trabajo en equipo</li>
-          <li>Resolución de problemas</li>
-          <!-- Agregar más habilidades acá -->
-        </ul>
-        <button class="btn-card" id="addSkillBtn" style="margin-top: 1rem;">+ Mostrar más</button>
+    <!-- CONTACTO -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form>
+        <label>Nombre: <input type="text" name="nombre"></label><br>
+        <label>Apellido: <input type="text" name="apellido"></label><br>
+        <label>Email: <input type="email" name="email"></label><br>
+        <label>Teléfono: <input type="tel" name="telefono"></label><br>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- PELÍCULAS -->
+    <section id="películas">
+      <h2>Mis Películas Favoritas</h2>
+      <div class="peliculas-container">
+        <div class="pelicula">
+          <img src="img/img.matias/inception.jpg" alt="Inception">
+          <h3>Inception</h3>
+          <p>Una obra maestra de ciencia ficción que explora los sueños.</p>
+        </div>
+        <div class="pelicula">
+          <img src="img/img.matias/matrix.jpg" alt="Matrix">
+          <h3>Matrix</h3>
+          <p>Revolucionó el cine con su visión del mundo digital.</p>
+        </div>
+        <div class="pelicula">
+          <img src="img/img.matias/interestellar.jpg" alt="Interstellar">
+          <h3>Interstellar</h3>
+          <p>Un viaje épico a través del espacio y el tiempo.</p>
+        </div>
       </div>
-
-      <!-- Películas favoritas -->
-      <div class="info-card">
-        <h2>🎬 Películas favoritas</h2>
-        <ul class="fav-list">
-          <li>🎞️ Película 1 — <em>completar</em></li>
-          <li>🎞️ Película 2 — <em>completar</em></li>
-          <li>🎞️ Película 3 — <em>completar</em></li>
-        </ul>
+    </section>
+    <!-- MÚSICA -->
+    <section id="musica">
+      <h2>Mis Discos Favoritos</h2>
+      <button id="toggle-musica">Mostrar/Ocultar Discos</button>
+      <div class="discos-container" style="display: none;">
+        <div class="disco">
+          <img src="img/img.matias/despedazados.jpg" alt="Despedazados por mil partes - La Renga">
+          <h3>Despedazados por mil partes</h3>
+          <p>La Renga</p>
+        </div>
+        <div class="disco">
+          <img src="img/img.matias/oktubre.jpg" alt="Oktubre - Los Redondos">
+          <h3>Oktubre</h3>
+          <p>Patricio Rey y sus Redonditos de Ricota</p>
+        </div>
+        <div class="disco">
+          <img src="img/img.matias/sumo.jpg" alt="After Chabón - Sumo">
+          <h3>After Chabón</h3>
+          <p>Sumo</p>
+        </div>
       </div>
-
-      <!-- Discos favoritos -->
-      <div class="info-card">
-        <h2>🎵 Discos favoritos</h2>
-        <ul class="fav-list">
-          <li>💿 Disco 1 — <em>completar</em></li>
-          <li>💿 Disco 2 — <em>completar</em></li>
-          <li>💿 Disco 3 — <em>completar</em></li>
-        </ul>
-      </div>
-
-      <!-- Sobre mí -->
-      <div class="info-card">
-        <h2>👤 Sobre mí</h2>
-        <p style="color: var(--color-text-muted); line-height: 1.7; font-size: 0.95rem;">
-          ¡Hola! Soy Matías, cazafantasmas en entrenamiento y estudiante de desarrollo web.
-          Completar con tu descripción personal acá...
-        </p>
-      </div>
-
-    </div>
-
-    <div style="text-align: center; padding-bottom: 4rem;">
-      <a href="index.html" class="btn-primary">← Volver al equipo</a>
-    </div>
-
+    </section>
   </main>
 
-  <footer class="footer">
-    <p>👻 Rulos de Estatua &mdash; TP1 Desarrollo Web 2025</p>
+  <!-- BOTÓN VOLVER ARRIBA -->
+  <button id="back-to-top" title="Volver arriba">↑</button>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 - Mi Portafolio | Sígueme en redes sociales</p>
+    <a href="#">Twitter</a> | <a href="#">GitHub</a>
   </footer>
 
+  <!-- Comentarios en el código -->
+  <!-- HEADER: Aquí podría agregarse un logo en el futuro -->
+  <!-- NAV: Se puede mejorar con un menú hamburguesa para móviles -->
+  <!-- TARJETAS: Ideal agregar más proyectos y animaciones -->
+  <!-- CONTACTO: A futuro se puede conectar con un backend -->
   <script src="js/matias.js"></script>
 </body>
 </html>

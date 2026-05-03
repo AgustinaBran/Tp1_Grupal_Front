@@ -1,9 +1,8 @@
 # 👻 Rulos de Estatua
 
 **TP1 — Desarrollo Web 2025**
-🔗 [Ver proyecto desplegado en Vercel](#) ← *completar con el link real*
+🔗 [Ver proyecto desplegado en Vercel](https://tp1-grupal-front.vercel.app/) 
 
----
 
 ## 📄 Descripción del Proyecto
 
@@ -17,10 +16,10 @@ La diversidad de estilos individuales es intencional: refleja que las diferencia
 
 | Nombre | GitHub |
 |--------|--------|
-| Agustina Brandemann | [@usuario](https://github.com/) |
-| Valeria Natucci | [@usuario](https://github.com/) |
-| Matías González | [@usuario](https://github.com/) |
-| Luis Specterman | [@usuario](https://github.com/) |
+| Agustina Brandemann @AgustinaBran (https://github.com/AgustinaBran/PortfolioFE)
+| Valeria Natucci  @TheGipsyGirl (https://github.com/TheGipsyGirl/vale_natucci_perfil.git) |
+| Matías González @Matises13 (https://github.com/Matises13/PortafolioPersonal) |
+| Luis Specterman @SpectermanLuis (https://github.com/SpectermanLuis/tecnicatura_front_pi01.git) |
 
 ---
 
@@ -89,6 +88,7 @@ rulos-de-estatua/
 - Se utilizan emojis nativos para iconografía (👻 🎬 🎵 📍)
 - Los avatares son placeholders de iniciales (ej: "MG" para Matías González)
 - *Nota: los avatares pueden ser reemplazados por imágenes generadas con IA en TP2*
+- Finalmente fueron reemplazdos por imagenes generadas con gemini
 
 ---
 
@@ -103,20 +103,12 @@ rulos-de-estatua/
 | `initTeamCounter()` | Al llegar la sección del equipo, cuenta animadamente del 1 al 4 antes de mostrar el título final | Título "Los Cazadores" |
 | `initHeroButton()` | Al hacer clic en "Conocé al equipo", genera un emoji 👻 que explota en pantalla | Botón del Hero |
 
-### `js/matias.js` — Página individual de Matías
 
-| Función | Descripción | Ubicación |
-|---------|-------------|-----------|
-| Modo fantasma | Al hacer clic en el botón, cambia la paleta de colores de la página a tonos naranja | Botón en header |
-| Expandir habilidades | Despliega/oculta habilidades extra con animación de entrada | Sección habilidades |
-
-### Páginas individuales restantes
+### Páginas individuales 
 
 Cada integrante implementa su propia función JS en su archivo `js/nombre.js`. Ver sección correspondiente en cada página.
 
-> 📸 *Capturas de pantalla — completar una vez desplegado el proyecto*
 
----
 
 ## 🚀 Enlace al Proyecto Desplegado
 
@@ -129,7 +121,7 @@ Cada integrante implementa su propia función JS en su archivo `js/nombre.js`. V
 ### Herramientas utilizadas
 
 - **Claude (Anthropic) — claude-sonnet-4** — Asistencia principal en generación de código y estructura del proyecto
-
+- Gemini
 ### Uso en Contenido y Código
 
 - **Estructura base del proyecto**: Claude generó la estructura de archivos, el CSS global con tema Ghostbusters y la lógica JS de la portada.
@@ -140,13 +132,14 @@ Cada integrante implementa su propia función JS en su archivo `js/nombre.js`. V
 
 - Los avatares actuales son placeholders de iniciales generados con CSS puro.
 - En futuras versiones se planea usar imágenes generadas con herramientas como **DALL·E**, **Midjourney** o **Adobe Firefly** con prompts temáticos de Ghostbusters.
+- Finalmente fueron reemplazados ya por imagenes generadas con Gemini.
 
 ---
 
 ## 📋 Bitácora
 
-Ver [bitacora.html](bitacora.html) en el sitio o el archivo correspondiente en el repositorio.
+Ver [bitacora.html]
 
 ---
 
-*Última actualización: TP1 — 2025*
+*Última actualización: TP1 — 2026*
